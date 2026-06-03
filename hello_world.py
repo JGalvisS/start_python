@@ -20,18 +20,23 @@ print(type_y)
 new_string= "this is a number {}"
 print(new_string.format(x))
 
-#tipos de colecciociones
-#dict {}- clave/valor es mutable
-my_dirct={"name":"jose","age":26}
-print(my_dirct)
-#list [] mantiene el orden de insercion, es mutable con append(), pop()
+#collection type
+#dict {}- key/value it is mutable, use .keys() to get only keys on directory or .values() to get only values. you can call any value using the key ["key"].
+my_dir={"name":"jose","age":26}
+print(my_dir)
+print(my_dir.keys())
+print(my_dir.values())
+print(my_dir["name"])
+#set no mantiene el orden, permite agregar .add () y eliminar elementos .discard(), Elimina los duplicados 
+my_set={"elsa","sebatian","mario"}
+print(my_set)
+#list [] keep insertion order, mutable use  .append() para agregar elemntos, .pop(), convertir en lista vacia .clear(), copiar todos los elemtos de la lista .copy) elimina elemtos con los que haga match .remove("object")
 my_list=["mary","alvaro","jose"]
 print(my_list)
 my_list.append("carlos")
 print(my_list)
-#tupla () no se puede modificar 
-my_tupla= ("margarita", "rosa","girasol")
-print(my_tupla)
-#set no mantiene el orden, permite agregar y eliminar elemtos, Elimina los duplicados 
-my_set={"elsa","sebatian","mario"}
-print(my_set)
+#tuple () no change, method to count how many that elements appear in the tuple.count("object"), it let get index of element .index("object")
+my_tuple= ("margarita", "rosa","girasol", "rosa")
+print(my_tuple)
+print(my_tuple.count("rosa"))
+print(my_tuple.index("girasol"))
